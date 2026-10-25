@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "krakens_blood",
+	"version": "${version}",
+	"name": "krakens blood",
+	"description": "a pirate themed mod",
+	"authors": [
+		"NicholasC"
+	],
+	"contact": {
+		"sources": "https://github.com/NicholasC2/krakens-blood"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/krakens_blood/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nick.KrakensBlood"
+		],
+		"client": [
+			"com.nick.client.KrakensBloodClient"
+		]
+	},
+	"mixins": [
+		"krakens_blood.mixins.json",
+		{
+			"config": "krakens_blood.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
