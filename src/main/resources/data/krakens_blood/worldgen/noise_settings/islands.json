@@ -1,0 +1,35 @@
+{
+    "sea_level": 63,
+    "aquifers_enabled": true,
+    "ore_veins_enabled": true,
+    "legacy_random_source": false,
+    "disable_mob_generation": false,
+    "default_block": "minecraft:stone",
+    "default_fluid": "minecraft:water",
+    "noise": {
+      "min_y": -64,
+      "height": 384,
+      "size_horizontal": 1,
+      "size_vertical": 2
+    },
+    "noise_router": {
+      "barrier": "minecraft:overworld/barrier",
+      "fluid_level_floodedness": "minecraft:overworld/fluid_level_floodedness",
+      "fluid_level_spread": "minecraft:overworld/fluid_level_spread",
+      "lava": "minecraft:overworld/lava",
+      "temperature": "minecraft:overworld/temperature",
+      "vegetation": "minecraft:overworld/vegetation",
+      "continents": "minecraft:overworld/continents",
+      "erosion": "minecraft:overworld/erosion",
+      "depth": "minecraft:overworld/depth",
+      "ridges": "minecraft:overworld/ridges",
+      "initial_density_without_jaggedness": "minecraft:overworld/initial_density_without_jaggedness",
+      "final_density": "minecraft:overworld/final_density",
+      "vein_toggle": "minecraft:overworld/vein_toggle",
+      "vein_ridged": "minecraft:overworld/vein_ridged",
+      "vein_gap": "minecraft:overworld/vein_gap",
+      "chunk_surface_level": "minecraft:overworld/chunk_surface_level"
+    },
+    "spawn_target": [],
+    "material_rule": "minecraft:overworld"
+  }

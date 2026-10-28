@@ -4,9 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator.Pack;
-import net.minecraft.core.Registry;
 import net.minecraft.core.RegistrySetBuilder;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 
@@ -14,7 +12,6 @@ import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.nick.worldgen.IslandsChunkGenerator;
 import com.nick.worldgen.WorldBiomes;
 import com.nick.worldgen.WorldgenProvider;
 
@@ -26,11 +23,7 @@ public class KrakensBlood implements ModInitializer, DataGeneratorEntrypoint {
 
 	@Override
 	public void onInitialize() {
-        Registry.register(
-			BuiltInRegistries.CHUNK_GENERATOR,
-			Identifier.fromNamespaceAndPath(MOD_ID, "islands"),
-			IslandsChunkGenerator.CODEC
-		);
+
 	}
 
 	@Override
