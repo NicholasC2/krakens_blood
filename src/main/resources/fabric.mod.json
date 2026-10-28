@@ -10,6 +10,9 @@
 	"contact": {
 		"sources": "https://github.com/NicholasC2/krakens-blood"
 	},
+    "fabric-datagen": [ 
+      "com.nick.KrakensBlood"
+    ],
 	"license": "CC0-1.0",
 	"icon": "assets/krakens_blood/icon.png",
 	"environment": "*",
