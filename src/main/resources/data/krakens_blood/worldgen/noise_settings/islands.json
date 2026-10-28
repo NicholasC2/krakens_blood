@@ -20,7 +20,7 @@
         "lava": "minecraft:overworld/lava",
         "temperature": "minecraft:overworld/temperature",
         "vegetation": "minecraft:overworld/vegetation",
-        "continents": "krakens_blood:island_shape",
+        "continents": "minecraft:overworld/continents",
         "erosion": "minecraft:overworld/erosion",
         "depth": "minecraft:overworld/depth",
         "ridges": "minecraft:overworld/ridges",

@@ -16,7 +16,7 @@ public class KrakensBlood implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		IslandsBiomeSource.register();
 	}
 
 	public static Identifier id(@NonNull String path) {
