@@ -1,7 +1,6 @@
 package com.nick;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator.Pack;
 import net.minecraft.resources.Identifier;
 
 import org.jspecify.annotations.NonNull;
@@ -12,11 +11,10 @@ public class KrakensBlood implements ModInitializer {
 	public static final String MOD_ID = "krakens_blood";
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static Pack pack;
 
 	@Override
 	public void onInitialize() {
-		IslandsBiomeSource.register();
+
 	}
 
 	public static Identifier id(@NonNull String path) {
