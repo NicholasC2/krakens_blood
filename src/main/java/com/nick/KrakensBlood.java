@@ -7,14 +7,18 @@ import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.nick.items.Quest;
+
 public class KrakensBlood implements ModInitializer {
 	public static final String MOD_ID = "krakens_blood";
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	public static final Quest QUEST = Quest.register();
+
 	@Override
 	public void onInitialize() {
-
+		
 	}
 
 	public static Identifier id(@NonNull String path) {
