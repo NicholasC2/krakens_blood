@@ -6,9 +6,7 @@
                 "type": "minecraft:noise",
                 "biome_source": {
                     "type": "krakens_blood:islands",
-                    "cold_ocean_biome": "minecraft:cold_ocean",
-                    "ocean_biome": "minecraft:ocean",
-                    "warm_ocean_biome": "minecraft:warm_ocean",
+                    "ocean_biome": "minecraft:cold_ocean",
                     "jungle_biome": "minecraft:jungle",
                     "mountain_biome": "minecraft:jagged_peaks"
                 },
