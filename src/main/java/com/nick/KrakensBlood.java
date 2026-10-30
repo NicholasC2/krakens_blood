@@ -1,6 +1,10 @@
 package com.nick;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 
 import org.jspecify.annotations.NonNull;
@@ -18,7 +22,7 @@ public class KrakensBlood implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		
+		KrakensBloodCommands.register();
 	}
 
 	public static Identifier id(@NonNull String path) {
