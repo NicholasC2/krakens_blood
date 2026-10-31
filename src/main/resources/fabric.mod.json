@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "krakens_blood",
+	"id": "krakensblood",
 	"version": "${version}",
 	"name": "krakens blood",
 	"description": "a pirate themed mod",
@@ -8,23 +8,23 @@
 		"NicholasC"
 	],
 	"contact": {
-		"sources": "https://github.com/NicholasC2/krakens-blood"
+		"sources": "https://github.com/NicholasC2/krakens_blood"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/krakens_blood/icon.png",
+	"icon": "assets/krakensblood/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.nick.KrakensBlood"
+			"com.krakensblood.KrakensBlood"
 		],
 		"client": [
-			"com.nick.client.KrakensBloodClient"
+			"com.krakensblood.client.KrakensBloodClient"
 		]
 	},
 	"mixins": [
-		"krakens_blood.mixins.json",
+		"krakensblood.mixins.json",
 		{
-			"config": "krakens_blood.client.mixins.json",
+			"config": "krakensblood.client.mixins.json",
 			"environment": "client"
 		}
 	],

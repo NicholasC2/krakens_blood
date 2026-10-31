@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "krakens_blood:item/quest"
+        "layer0": "krakensblood:item/quest"
     }
 }

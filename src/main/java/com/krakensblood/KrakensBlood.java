@@ -1,16 +1,15 @@
-package com.nick;
+package com.krakensblood;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 
-import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.nick.items.Quest;
+import com.krakensblood.items.Quest;
 
 public class KrakensBlood implements ModInitializer {
-	public static final String MOD_ID = "krakens_blood";
+	public static final String MOD_ID = "krakensblood";
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
@@ -19,9 +18,10 @@ public class KrakensBlood implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		KrakensBloodCommands.register();
+		KrakensBloodBlocks.register();
 	}
 
-	public static Identifier id(@NonNull String path) {
+	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
 	}
 }

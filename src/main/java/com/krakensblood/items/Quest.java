@@ -1,9 +1,9 @@
-package com.nick.items;
+package com.krakensblood.items;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.nick.KrakensBlood;
+import com.krakensblood.KrakensBlood;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Registry;

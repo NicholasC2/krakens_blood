@@ -1,4 +1,4 @@
-package com.nick.client;
+package com.krakensblood.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
