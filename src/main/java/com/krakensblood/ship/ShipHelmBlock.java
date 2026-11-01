@@ -14,6 +14,19 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
 public class ShipHelmBlock extends Block {
+    private static final Identifier SHIP_HELM_ID = KrakensBlood.id("ship_helm");
+
+    public static final Block SHIP_HELM_BLOCK = Registry.register(
+        BuiltInRegistries.BLOCK,
+        SHIP_HELM_ID,
+        new ShipHelmBlock(Properties.of().setId(ResourceKey.create(Registries.BLOCK, SHIP_HELM_ID)).strength(3.0f))
+    );
+
+    public static final Item SHIP_HELM_ITEM = Registry.register(
+        BuiltInRegistries.ITEM,
+        SHIP_HELM_ID,
+        new BlockItem(SHIP_HELM_BLOCK, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, SHIP_HELM_ID)).stacksTo(1))
+    );
 
     public ShipHelmBlock(Properties settings) {
         super(settings);
