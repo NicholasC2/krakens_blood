@@ -8,7 +8,6 @@ import java.util.Queue;
 import java.util.Set;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -29,7 +28,7 @@ public class ShipAssembler {
 
             visited.add(currentPos);
 
-            if (state.isAir() || state.getFluidState().isEmpty()) {
+            if (state.isAir() && state.getFluidState().isEmpty()) {
                 continue;
             }
 
@@ -54,22 +53,5 @@ public class ShipAssembler {
             pos.above(),
             pos.below()
         );
-    }
-
-    public static void SpawnShip(Level level, BlockPos startPos) {
-        List<BlockPos> blocks = getConnectedBlocks(level, startPos);
-        Ship ship = new Ship();
-
-        for (BlockPos block : blocks) {
-            FallingBlockEntity fallingBlock = FallingBlockEntity.fall(level, block, level.getBlockState(block));
-            fallingBlock.noPhysics = true;
-            fallingBlock.setNoGravity(true);
-            fallingBlock.time = 1;
-
-            level.destroyBlock(block, false);
-            level.addFreshEntity(fallingBlock);
-
-            ship.blocks.add(fallingBlock);
-        }
     }
 }
