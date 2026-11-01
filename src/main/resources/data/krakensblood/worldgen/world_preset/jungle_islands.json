@@ -69,7 +69,7 @@
                         }
                     ]
                 },
-                "settings": "minecraft:overworld"
+                "settings": "krakensblood:overworld"
             }
         },
         "minecraft:the_end": {
