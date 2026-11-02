@@ -59,7 +59,6 @@ public class KrakensBloodBlocks {
         )
     );
 
-    
     public static final BlockEntityType<DockBlockEntity> DOCK_ENTITY_TYPE = Registry.register(
         BuiltInRegistries.BLOCK_ENTITY_TYPE,
         KrakensBlood.id("dock"),
