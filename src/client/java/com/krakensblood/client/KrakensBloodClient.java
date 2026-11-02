@@ -1,4 +1,3 @@
-
 package com.krakensblood.client;
 
 import net.fabricmc.api.ClientModInitializer;
@@ -6,6 +5,6 @@ import net.fabricmc.api.ClientModInitializer;
 public class KrakensBloodClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-    
+
     }
 }

@@ -1,5 +1,7 @@
 {
   "item.krakensblood.quest": "Quest",
+  "item.krakensblood.dock": "Dock",
   "item.krakensblood.ship_helm": "Ship Helm",
-  "itemGroup.krakensblood.tab": "Krakens Blood"
+  "itemGroup.krakensblood.tab": "Krakens Blood",
+  "generator.krakensblood.jungle_islands": "Jungle Islands"
 }
